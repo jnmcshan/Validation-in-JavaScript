@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Validation JavaScript Assignment; 11/15/2019</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<input  id="inputName" placeholder="Name" />
+<input type="password" placeholder="Pass" id="inputPass"/>
+<div class="button">Submit</div>
+<div class="error"></div>
+
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+Name: <input type="John" name="fname">
+<input type="submit" value="Submit">
+</form>
+
+<form action="/action_page.php" method="post">
+  <input type="text" name="fname" required>
+  //Selects input elements with the "required" attribute specified
+  <input type="submit" value="Submit">
+</form>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
